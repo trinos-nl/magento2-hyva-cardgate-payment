@@ -1,0 +1,22 @@
+{
+  "name": "trinos-nl/magento2-hyva-cardgate-payment",
+  "version": "1.0.0",
+  "description": "N/A",
+  "type": "magento2-module",
+  "require": {
+    "magento/framework": "*",
+    "cardgate/magento2": "2.0.*",
+    "hyva-themes/magento2-hyva-checkout": "^1.1"
+  },
+  "license": [
+    ""
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Trinos\\CardgatePayment\\": ""
+    }
+  }
+}

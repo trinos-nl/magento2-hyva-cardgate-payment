@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Trinos\Checkout\Model\Magewire\Payment\PlaceOrderServiceProvider">
+        <arguments>
+            <argument name="placeOrderServiceList" xsi:type="array">
+                <item name="cardgate_afterpay" xsi:type="object">Trinos\CardgatePayment\Service\PlaceOrderService</item>
+                <item name="cardgate_banktransfer" xsi:type="object">Trinos\CardgatePayment\Service\PlaceOrderService</item>
+                <item name="cardgate_belfius" xsi:type="object">Trinos\CardgatePayment\Service\PlaceOrderService</item>
+                <item name="cardgate_billink" xsi:type="object">Trinos\CardgatePayment\Service\PlaceOrderService</item>
+                <item name="cardgate_bitcoin" xsi:type="object">Trinos\CardgatePayment\Service\PlaceOrderService</item>
+                <item name="cardgate_capayable" xsi:type="object">Trinos\CardgatePayment\Service\PlaceOrderService</item>
+                <item name="cardgate_clickandbuy" xsi:type="object">Trinos\CardgatePayment\Service\PlaceOrderService</item>
+                <item name="cardgate_creditcard" xsi:type="object">Trinos\CardgatePayment\Service\PlaceOrderService</item>
+                <item name="cardgate_directdebit" xsi:type="object">Trinos\CardgatePayment\Service\PlaceOrderService</item>
+                <item name="cardgate_giftcard" xsi:type="object">Trinos\CardgatePayment\Service\PlaceOrderService</item>
+                <item name="cardgate_giropay" xsi:type="object">Trinos\CardgatePayment\Service\PlaceOrderService</item>
+                <item name="cardgate_ideal" xsi:type="object">Trinos\CardgatePayment\Service\PlaceOrderService</item>
+                <item name="cardgate_idealqr" xsi:type="object">Trinos\CardgatePayment\Service\PlaceOrderService</item>
+                <item name="cardgate_klarna" xsi:type="object">Trinos\CardgatePayment\Service\PlaceOrderService</item>
+                <item name="cardgate_mistercash" xsi:type="object">Trinos\CardgatePayment\Service\PlaceOrderService</item>
+                <item name="cardgate_onlineueberweisen" xsi:type="object">Trinos\CardgatePayment\Service\PlaceOrderService</item>
+                <item name="cardgate_paypal" xsi:type="object">Trinos\CardgatePayment\Service\PlaceOrderService</item>
+                <item name="cardgate_paysafecard" xsi:type="object">Trinos\CardgatePayment\Service\PlaceOrderService</item>
+                <item name="cardgate_paysafecash" xsi:type="object">Trinos\CardgatePayment\Service\PlaceOrderService</item>
+                <item name="cardgate_przelewy24" xsi:type="object">Trinos\CardgatePayment\Service\PlaceOrderService</item>
+                <item name="cardgate_safeklick" xsi:type="object">Trinos\CardgatePayment\Service\PlaceOrderService</item>
+                <item name="cardgate_sofortbanking" xsi:type="object">Trinos\CardgatePayment\Service\PlaceOrderService</item>
+                <item name="cardgate_spraypay" xsi:type="object">Trinos\CardgatePayment\Service\PlaceOrderService</item>
+            </argument>
+        </arguments>
+    </type>
+</config>

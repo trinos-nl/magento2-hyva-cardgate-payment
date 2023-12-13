@@ -1,0 +1,24 @@
+<?php
+declare(strict_types=1);
+
+use Trinos\CardgatePayment\Magewire\Checkout\Payment\Method\Ideal;
+use Trinos\Theme\Model\ViewModelRegistry;
+use Trinos\Theme\ViewModel\HeroiconsOutline;
+use Magento\Framework\Escaper;
+use Magento\Framework\View\Element\Template;
+
+/** @var Template $block */
+/** @var Escaper $escaper */
+/** @var ViewModelRegistry $viewModels */
+/** @var Ideal $magewire */
+
+$heroicons = $viewModels->require(HeroiconsOutline::class);
+?>
+<div class="flex flex-col space-y-2">
+    <?php foreach ($magewire->issuers as $issuer): ?>
+        <label>
+            <input type="radio" class="mr-2 text-primary-500 border-gray-300" name="cardgate_issuer" wire:model="selectedIssuer" value="<?= $issuer['id'] ?>"/>
+            <span><?= $escaper->escapeHtml($issuer['name']) ?></span>
+        </label>
+    <?php endforeach; ?>
+</div>
